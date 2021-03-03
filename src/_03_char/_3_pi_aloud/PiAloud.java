@@ -13,6 +13,28 @@ public class PiAloud {
 	
 	
 	// 1. Make a main method and make sure your program can run
+	public static void main(String[] args) {
+		/*String value = "3.14159265358979323846";
+		System.out.println(value.charAt(0));
+		System.out.println(value.charAt(1));
+		System.out.println(value.charAt(2));
+		for (int i = 0; i < value.length(); i++) {
+			System.out.println(value.charAt(i));
+		}*/
+		StringBuilder name = new StringBuilder("David");
+		int lastposition = name.length()-1;
+		name.deleteCharAt(lastposition);
+		System.out.println(name);
+		lastposition--;
+		name.deleteCharAt(lastposition);
+		System.out.println(name);
+		name.append('e');
+		System.out.println(name);
+		StringBuilder oldName = new StringBuilder("David");
+		if (oldName.charAt(3) != name.charAt(3)) {
+			System.out.println("Dave is not my name!");
+		}
+	}
 
 	// 2. Make a String variable to hold 20 digits of Pi. You could use http://www.piday.org/million/ to get this.
 
